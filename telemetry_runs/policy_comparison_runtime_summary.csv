@@ -1,0 +1,5 @@
+scenario,Planner,Rule-Based,Static
+a100_failure,4390.0,4150.0,
+combined_a100_down_5090_busy,4730.0,4730.0,
+jetson_degraded,4510.0,4150.0,
+nominal,4390.0,4150.0,

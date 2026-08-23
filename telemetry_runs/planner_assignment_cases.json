@@ -1,0 +1,42 @@
+{
+  "nominal_live_telemetry": {
+    "adversarial_training": "a100",
+    "recovery_finetuning": "gpu_2",
+    "rais_scoring": "rtx5090",
+    "pruning_decision": "rtx5090",
+    "perturbation_generation": "rtx5090",
+    "model_evaluation": "rtx5090",
+    "metric_computation": "rtx5090",
+    "deploy_updated_model": "rtx4080s"
+  },
+  "resource_failure_a100_offline": {
+    "adversarial_training": "gpu_2",
+    "metric_computation": "gpu_2",
+    "recovery_finetuning": "rtx5090",
+    "rais_scoring": "rtx5090",
+    "pruning_decision": "rtx5090",
+    "perturbation_generation": "rtx5090",
+    "model_evaluation": "rtx5090",
+    "deploy_updated_model": "rtx4080s"
+  },
+  "resource_degradation_rtx5090_busy": {
+    "adversarial_training": "a100",
+    "metric_computation": "a100",
+    "recovery_finetuning": "rtx4080s",
+    "rais_scoring": "rtx4080s",
+    "pruning_decision": "rtx4080s",
+    "perturbation_generation": "rtx4080s",
+    "model_evaluation": "rtx4080s",
+    "deploy_updated_model": "rtx4080s"
+  },
+  "combined_a100_down_5090_busy": {
+    "adversarial_training": "gpu_2",
+    "perturbation_generation": "rtx4080s",
+    "recovery_finetuning": "rtx4080s",
+    "rais_scoring": "rtx4080s",
+    "pruning_decision": "rtx4080s",
+    "model_evaluation": "rtx4080s",
+    "metric_computation": "rtx4080s",
+    "deploy_updated_model": "rtx4080s"
+  }
+}

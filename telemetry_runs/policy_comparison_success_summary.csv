@@ -1,0 +1,5 @@
+scenario,Planner,Rule-Based,Static
+a100_failure,True,True,False
+combined_a100_down_5090_busy,True,True,False
+jetson_degraded,True,True,False
+nominal,True,True,False
