@@ -1,0 +1,18 @@
+\begin{table}[!t]
+\centering
+\caption{Trusted-service restoration under runtime disruption.}
+\label{tab:exp3-recovery}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lrrrrrr}
+\toprule
+& & \multicolumn{4}{c}{Mean Trusted Restore Time (s)} & \\
+\cmidrule(lr){3-6}
+Condition & Cases & REPLICA & CP-SAT & HEFT & EASY & Reduction \\
+\midrule
+Recovery required & 1215 & \textbf{23.624} & 161.020 & 161.020 & 161.020 & \textbf{85.3\%} \\
+Trusted failover & 891 & \textbf{0.240} & 187.597 & 187.598 & 187.598 & \textbf{99.9\%} \\
+Replanning required & 315 & \textbf{0.047} & 264.684 & 264.684 & 264.684 & \textbf{99.98\%} \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

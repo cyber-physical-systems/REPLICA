@@ -1,0 +1,51 @@
+
+\begin{table}[!t]
+\centering
+\caption{REPLICA Framework Ablation Under Runtime Disruption}
+\label{tab:replica-ablation}
+\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.15}
+
+\begin{tabular}{lccc}
+\toprule
+
+\textbf{Configuration} &
+\textbf{\makecell{Recovery \\ Success}} &
+\textbf{\makecell{Trusted Restore \\ Time (s)}} &
+\textbf{Replans} \\
+
+\midrule
+
+Full REPLICA
+& \textbf{100.0\%}
+& \textbf{17.7}
+& 315 \\
+
+No State Reconstruction
+& \textbf{49.4\%}
+& --$^{*}$
+& 0 \\
+
+No Strategy Selection
+& 100.0\%
+& 120.8
+& 0 \\
+
+No Replanning
+& 100.0\%
+& 17.7
+& 0 \\
+
+\bottomrule
+\end{tabular}
+
+\vspace{2pt}
+\raggedright
+\footnotesize
+$^{*}$Trusted-service restoration time is not reported for the
+no-state-reconstruction variant because failed recovery cases do not
+have a restoration time; reporting the mean over successful cases
+would therefore not be directly comparable.
+
+\end{table}
