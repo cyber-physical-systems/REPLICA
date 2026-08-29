@@ -1,10 +1,91 @@
 Task scheduling across edge-to-cloud environments is increasingly demanding due to the wide adoption and continued emergence of edge devices. Traditional scheduling approaches perform well under normal resource conditions, but abrupt disruptions or adversarial attacks can create runtime states in which existing task assignments or recovery decisions fail or are no longer valid. To address this issue, we present REPLICA, a state-aware orchestration framework that uses the Planning Domain Definition Language to represent the current system state, resource capabilities, task requirements, and workflow goals. REPLICA operates as a closed loop that observes system conditions, reconstructs the planning problem, executes validated actions, and replans unfinished workloads when resource availability or cloud model performance degrades. We evaluate REPLICA against Dynamic HEFT, CP-SAT, and EASY Backfill, and our results show that as resource availability decreases, REPLICA remains competitive with CP-SAT while reducing workflow makespan by up to 21.6\% over HEFT and 40.5\% over EASY Backfill. In particular, under runtime resource loss and adversarial attacks, REPLICA outperforms all other baselines, achieving the best recovery success and reducing trusted-service interruption by 99.3~99.7\%. We release REPLICA to the public research community
 
-## Reproducing the Paper Results
+## Setup
 
-All commands below should be run from the repository root.
+REPLICA requires Python 3.12. The following commands create an isolated Python environment, clone the repository, and install the required dependencies.
 
-The released code assumes Python 3.12 and the required Python packages are installed in the active environment.
+### 1. Create a Python 3.12 virtual environment
+
+```bash
+python3.12 -m venv replica_env
+```
+
+### 2. Activate the virtual environment
+
+On Linux or macOS:
+
+```bash
+source replica_env/bin/activate
+```
+
+On Windows PowerShell:
+
+```powershell
+replica_env\Scripts\Activate.ps1
+```
+
+After activation, verify that Python 3.12 is being used:
+
+```bash
+python --version
+```
+
+The output should report Python 3.12.
+
+### 3. Clone the REPLICA repository
+
+```bash
+git clone https://github.com/cyber-physical-systems/REPLICA.git
+cd REPLICA
+```
+
+All remaining commands should be run from the repository root (`REPLICA/`) with the virtual environment activated.
+
+### 4. Upgrade pip
+
+```bash
+python -m pip install --upgrade pip
+```
+
+### 5. Install the required Python packages
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+### 6. Verify the installation
+
+```bash
+python - <<'PY'
+import numpy
+import pandas
+import matplotlib
+import ortools
+import unified_planning
+
+print("REPLICA Python environment is ready.")
+PY
+```
+
+If the command completes without an import error, the Python environment is ready.
+
+---
+
+## Running the Experiments
+
+From this point forward, make sure the virtual environment is active:
+
+```bash
+source replica_env/bin/activate
+```
+
+and move to the repository root before running the experiments:
+
+```bash
+cd REPLICA
+```
+
+The experiments can then be reproduced using the commands provided in the sections below.
 
 ---
 
