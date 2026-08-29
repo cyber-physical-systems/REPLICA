@@ -250,7 +250,7 @@ This corresponds to approximately:
 
 ```text
 REPLICA vs. HEFT   : 21.5% lower
-REPLICA vs. EASY   : 5.4% lower
+REPLICA vs. EASY   : 40.5% lower
 REPLICA vs. CP-SAT : within 0.3%
 ```
 
