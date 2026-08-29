@@ -128,6 +128,26 @@ If `execution_profiles.json` is already included in the release, it does not nee
 
 Experiment 2 compares REPLICA with CP-SAT, HEFT, and EASY Backfill as feasible task-to-resource assignments are progressively removed.
 
+### Experiment 2 Data Availability
+
+To keep the public artifact lightweight, the repository includes the final Experiment 2 benchmark outputs used in the paper rather than all intermediate resource-state and scenario-generation artifacts. The released final benchmark contains the scheduler results required to reproduce the Experiment 2 tables and figures reported in the paper.
+
+Reviewers can regenerate the paper outputs from:
+
+```text
+
+experiment2/generated/final_benchmark_event_joint/final_benchmark_master.csv
+
+```
+
+```bash
+python -m experiment2.plot_final_benchmark_event_joint
+python -m experiment2.plot_final_event_joint_moneyshots
+python -m experiment2.plot_replica_vs_cpsat_competitiveness
+python -m experiment2.generate_final_median_table
+
+```
+
 ### 1. Build the empirical resource-state inputs
 
 If these artifacts are already included in the release, this step can be skipped.
