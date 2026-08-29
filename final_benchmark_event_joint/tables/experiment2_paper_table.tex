@@ -1,0 +1,22 @@
+\begin{table*}[!t]
+\centering
+\caption{Scheduling performance under progressive loss of feasible task-to-resource assignments. Positive values indicate lower makespan for REPLICA.}
+\label{tab:exp2-scheduling}
+\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{c r r r r r r r r}
+\hline
+$\rho$ & REPLICA & CP-SAT & HEFT & EASY & vs. CP-SAT & vs. HEFT & vs. EASY & Wins vs. CP-SAT \\
+ & \multicolumn{4}{c}{Mean Makespan (s)} & \multicolumn{3}{c}{REPLICA Improvement} & \\
+\hline
+1.00 & 229.12 & 229.12 & 229.12 & 384.97 & -0.00\% & +0.0\% & +40.5\% & 0/61 \\
+0.90 & 249.04 & 248.10 & 256.18 & 372.74 & -0.38\% & +2.8\% & +33.2\% & 2/61 \\
+0.80 & 288.24 & 287.25 & 300.09 & 376.84 & -0.34\% & +3.9\% & +23.5\% & 5/61 \\
+0.70 & 322.47 & 320.83 & 331.41 & 392.29 & -0.51\% & +2.7\% & +17.8\% & 10/61 \\
+0.60 & 345.68 & 343.97 & 372.02 & 415.15 & -0.50\% & +7.1\% & +16.7\% & 12/61 \\
+0.50 & 409.71 & 408.29 & 468.83 & 448.43 & -0.35\% & +12.6\% & +8.6\% & 18/61 \\
+0.40 & 513.01 & 512.37 & 534.49 & 533.12 & -0.12\% & +4.0\% & +3.8\% & 23/61 \\
+0.33 & 579.48 & 579.47 & 579.88 & 580.24 & -0.00\% & +0.1\% & +0.1\% & 26/61 \\
+\hline
+\end{tabular}
+\end{table*}

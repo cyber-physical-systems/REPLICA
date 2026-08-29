@@ -1,0 +1,46 @@
+
+\begin{table*}[!t]
+\centering
+\caption{Experiment 2 --- Median Workflow Makespan Under Increasing Resource Constraints}
+\label{tab:exp2-scheduling}
+\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.15}
+
+\begin{tabular}{c rrrr rrr}
+\toprule
+
+& \multicolumn{4}{c}{\textbf{Median Makespan (s)}}
+& \multicolumn{3}{c}{\textbf{REPLICA Improvement (\%)}} \\
+
+\cmidrule(lr){2-5}
+\cmidrule(lr){6-8}
+
+\textbf{$\rho$} &
+\textbf{REPLICA} &
+\textbf{CP-SAT} &
+\textbf{HEFT} &
+\textbf{EASY} &
+\textbf{vs. CP-SAT} &
+\textbf{vs. HEFT} &
+\textbf{vs. EASY} \\
+
+\midrule
+1.00 & 229.12 & 229.12 & 229.12 & 384.97 & 0.0 & 0.0 & +40.5 \\
+0.90 & 234.96 & 233.18 & 235.04 & 370.55 & -0.8 & 0.0 & +36.6 \\
+0.80 & 270.02 & 270.02 & 278.08 & 370.55 & 0.0 & +2.9 & +27.1 \\
+0.70 & 291.68 & 284.86 & 305.15 & 367.15 & -2.4 & +4.4 & +20.6 \\
+0.60 & 359.58 & 359.58 & 366.19 & 387.06 & 0.0 & +1.8 & +7.1 \\
+0.50 & 366.06 & 364.93 & 466.56 & 387.06 & -0.3 & +21.5 & +5.4 \\
+0.40 & 542.28 & 542.28 & 545.65 & 552.35 & 0.0 & +0.6 & +1.8 \\
+0.33 & 555.73 & 555.73 & 555.73 & 555.73 & 0.0 & 0.0 & 0.0 \\
+\bottomrule
+
+\end{tabular}
+
+\vspace{2pt}
+\footnotesize
+Positive improvement indicates lower median makespan for REPLICA;
+negative values indicate higher median makespan.
+
+\end{table*}
